@@ -12,6 +12,7 @@ sudo apt install -y bat
 sudo apt install -y nodejs
 sudo apt install -y npm
 sudo apt install -y python3.11-venv
+sudo apt install -y rlwrap
 
 # Install packages required for Alacritty
 sudo apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
