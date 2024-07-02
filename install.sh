@@ -35,6 +35,9 @@ sudo chown -R root:root ~/Downloads/FiraCode
 sudo mv ~/Downloads/FiraCode /usr/share/fonts/truetype
 fc-cache -f -v
 
+# Remove pre-existing Neovim config
+rm -rf ~/.config/nvim
+
 # Download and install Neovim
 curl -o ~/Downloads/nvim.appimage -L https://github.com/neovim/neovim/releases/download/v0.10.0/nvim.appimage
 sudo chown root:root ~/Downloads/nvim.appimage
