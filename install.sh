@@ -76,3 +76,19 @@ sudo update-desktop-database
 mkdir -p ~/Tools/Custom/Bash/config_editor/alacritty/opacity
 curl -o ~/Tools/Custom/Bash/config_editor/alacritty/opacity.sh -L https://raw.githubusercontent.com/devubu/opacity/main/opacity.sh
 chmod +x ~/Tools/Custom/Bash/config_editor/alacritty/opacity.sh
+
+# Dowload Rustscan
+git clone https://github.com/RustScan/RustScan.git ~/rustscan
+
+# Install Rustscan
+cargo build --release --manifest-path ~/rustscan/Cargo.toml
+sudo cp ~/rustscan/target/release/rustscan /usr/local/bin
+
+# Remove Alacritty Directory
+rm -rf ~/alacritty
+
+# Remove Rustscan Directory 
+rm -rf ~/rustscan
+
+# Add 'zsh' to the end of ~/.bashrc
+echo "zsh" >> ~/.bashrc
