@@ -78,7 +78,7 @@ git clone https://github.com/devubu/opacity.git ~/Tools/Custom/Bash/config_edito
 # Install Opacity script
 source ~/Tools/Custom/Bash/config_editor/alacritty/opacity/install.sh
 
-# Dowload Rustscan
+# Download Rustscan
 git clone https://github.com/RustScan/RustScan.git ~/rustscan
 
 # Install Rustscan
@@ -91,5 +91,12 @@ rm -rf ~/alacritty
 # Remove Rustscan Directory 
 rm -rf ~/rustscan
 
-# Add 'zsh' to the end of ~/.bashrc
-echo "zsh" >> ~/.bashrc
+# Check if ~/.bashrc contains a line with only the word 'zsh'
+if ! grep -qx "zsh" ~/.bashrc; then
+    # Add 'zsh' to the end of ~/.bashrc if not already present
+    echo "zsh" >> ~/.bashrc
+    # echo "Added 'zsh' to ~/.bashrc"
+# else
+    # echo "'zsh' is already present in ~/.bashrc"
+fi
+
