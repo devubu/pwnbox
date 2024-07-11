@@ -73,9 +73,8 @@ sudo desktop-file-install ~/alacritty/extra/linux/Alacritty.desktop
 sudo update-desktop-database
 
 # Download Opacity script
-mkdir -p ~/Tools/Custom/Bash/config_editor/alacritty/opacity
-curl -o ~/Tools/Custom/Bash/config_editor/alacritty/opacity.sh -L https://raw.githubusercontent.com/devubu/opacity/main/opacity.sh
-chmod +x ~/Tools/Custom/Bash/config_editor/alacritty/opacity.sh
+git clone https://github.com/devubu/opacity.git ~/Tools/Custom/Bash/config_editor/alacritty/opacity
+source ~/Tools/Custom/Bash/config_editor/alacritty/opacity/install.sh
 
 # Dowload Rustscan
 git clone https://github.com/RustScan/RustScan.git ~/rustscan
