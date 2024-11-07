@@ -78,7 +78,7 @@ git clone https://github.com/devubu/opacity.git ~/Tools/Custom/Bash/config_edito
 # Install Opacity script
 source ~/Tools/Custom/Bash/config_editor/alacritty/opacity/install.sh
 
-# Downlaod Info scripts
+# Download Info scripts
 git clone https://github.com/devubu/info.git ~/Tools/Custom/Bash/info
 
 # Install Info scripts
